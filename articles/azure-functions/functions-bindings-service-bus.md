@@ -69,7 +69,9 @@ public static void Run(
 }
 ```
 
-This example is for Azure Functions version 1.x. To make this code work for 2.x:
+This example is for Azure Functions version 1.x and we can see the ServiceBusTrigger takes three paramaters "myqueue" is the name of the queue,  AccessRights.Manage and lastly Connection which is the name of the key in the app setting. 
+
+To make this code work for 2.x:
 
 - [omit the access rights parameter](#trigger---configuration)
 - change the type of the log parameter from `TraceWriter` to `ILogger`
